@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\WEB DESIGN\\email\\MailWebSocketServer\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\WEB DESIGN\\email\\MailWebSocketServer\\wwwroot\\script\\script.js",
+      "PackagePath": "staticwebassets\\script\\script.js"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MailWebSocketServer.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MailWebSocketServer.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.MailWebSocketServer.props",
+      "PackagePath": "build\\MailWebSocketServer.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.MailWebSocketServer.props",
+      "PackagePath": "buildMultiTargeting\\MailWebSocketServer.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.MailWebSocketServer.props",
+      "PackagePath": "buildTransitive\\MailWebSocketServer.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

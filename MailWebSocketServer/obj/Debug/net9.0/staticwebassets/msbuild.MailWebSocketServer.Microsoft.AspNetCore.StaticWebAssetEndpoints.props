@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/MailWebSocketServer/index.9v4utw7uiy.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9v4utw7uiy"},{"Name":"integrity","Value":"sha256-JSEgynQ\u002BHTgkUbFNtiMPUrSfNbFdZhP87Az3\u002BhyBZeE="},{"Name":"label","Value":"_content/MailWebSocketServer/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1661"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022JSEgynQ\u002BHTgkUbFNtiMPUrSfNbFdZhP87Az3\u002BhyBZeE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 10 Apr 2025 13:30:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MailWebSocketServer/index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JSEgynQ\u002BHTgkUbFNtiMPUrSfNbFdZhP87Az3\u002BhyBZeE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1661"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022JSEgynQ\u002BHTgkUbFNtiMPUrSfNbFdZhP87Az3\u002BhyBZeE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 10 Apr 2025 13:30:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MailWebSocketServer/script/script.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\script\script.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8qHSPX\u002BdopsH6dkpmTl6JSzVxlzjyDUcVya3ctxm\u002BAc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"910"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228qHSPX\u002BdopsH6dkpmTl6JSzVxlzjyDUcVya3ctxm\u002BAc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 10 Apr 2025 13:25:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MailWebSocketServer/script/script.mbxxfb8am2.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\script\script.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mbxxfb8am2"},{"Name":"integrity","Value":"sha256-8qHSPX\u002BdopsH6dkpmTl6JSzVxlzjyDUcVya3ctxm\u002BAc="},{"Name":"label","Value":"_content/MailWebSocketServer/script/script.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"910"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228qHSPX\u002BdopsH6dkpmTl6JSzVxlzjyDUcVya3ctxm\u002BAc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 10 Apr 2025 13:25:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>
