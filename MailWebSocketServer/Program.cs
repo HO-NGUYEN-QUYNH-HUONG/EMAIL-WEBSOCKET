@@ -25,9 +25,13 @@ app.Use(async (context, next) =>
                 var result = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
                 var receivedText = Encoding.UTF8.GetString(buffer, 0, result.Count);
 
+                Console.WriteLine($"[RAW RECEIVED]: {receivedText}");
+
                 if (receivedText.StartsWith("send:"))
                 {
                     var json = receivedText.Substring(5);
+                    Console.WriteLine($"[JSON DATA]: {json}");
+
                     MailData? data = null;
                     string response;
 
@@ -37,6 +41,12 @@ app.Use(async (context, next) =>
 
                         if (data != null)
                         {
+                            // Debug dữ liệu nhận được
+                            Console.WriteLine($"[DEBUG] FROM: '{data.FromEmail}'");
+                            Console.WriteLine($"[DEBUG] TO: '{data.To}'");
+                            Console.WriteLine($"[DEBUG] SUBJECT: '{data.Subject}'");
+                            Console.WriteLine($"[DEBUG] BODY: '{data.Body}'");
+
                             await MailHandler.SendMailAsync(data);
                             response = "Email sent successfully!";
                         }
