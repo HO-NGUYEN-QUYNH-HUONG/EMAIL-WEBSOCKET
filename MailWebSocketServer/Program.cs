@@ -7,6 +7,8 @@ using System.Text.Json;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
+app.Run();
+
 app.UseWebSockets();
 app.UseDefaultFiles();
 app.UseStaticFiles();
@@ -76,4 +78,3 @@ app.Use(async (context, next) =>
     }
 });
 
-app.Run();
