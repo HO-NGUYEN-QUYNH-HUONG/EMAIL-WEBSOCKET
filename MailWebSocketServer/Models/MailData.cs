@@ -19,3 +19,4 @@ public class MailData
     [JsonPropertyName("body")]
     public string Body { get; set; } = "";
 }
+

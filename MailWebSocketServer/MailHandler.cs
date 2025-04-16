@@ -26,6 +26,9 @@ public class MailHandler
         message.Subject = data.Subject;
         message.Body = new TextPart("plain") { Text = data.Body };
 
+        // phản hồi đúng người gửi 
+        message.ReplyTo.Add(new MailboxAddress("", data.FromEmail));
+
         using var smtp = new SmtpClient();
         await smtp.ConnectAsync("smtp.gmail.com", 587, MailKit.Security.SecureSocketOptions.StartTls);
         await smtp.AuthenticateAsync(data.FromEmail, data.AppPassword);

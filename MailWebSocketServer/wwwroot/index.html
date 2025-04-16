@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="email-form">
+    <div class="email-form" novalidate>
         <h3 class="text-center mb-4">Gửi Email</h3>
         <div class="mb-3">
             <input type="email" class="form-control" id="from" placeholder="Your Gmail">
@@ -24,6 +24,9 @@
         <div class="mb-3">
             <textarea class="form-control" id="body" rows="5" placeholder="Body"></textarea>
         </div>
+
+        <input type="file" class="form-control" id="attachment">
+        
         <button onclick="sendMail()" class="btn btn-primary w-100">Gửi Email</button>
         <p id="response" class="text-center text-danger"></p>
     </div>

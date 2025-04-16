@@ -40,3 +40,27 @@ ws.onmessage = function (event) {
 ws.onerror = function () {
     document.getElementById("response").innerText = "Không kết nối được WebSocket!";
 };
+
+const formData = new FormData();
+formData.append("fromEmail", from);
+formData.append("appPassword", appPassword);
+formData.append("to", to);
+formData.append("subject", subject);
+formData.append("body", body);
+formData.append("attachment", document.getElementById("attachment").files[0]);
+
+fetch("/sendmail", { method: "POST", body: formData });
+
+//bật validation
+(() => {
+    const form = document.getElementById("emailForm");
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (!form.checkValidity()) {
+            form.classList.add("was-validated");
+            return;
+        }
+        sendMail(); // Hàm bạn đã có sẵn
+    });
+})();
+
